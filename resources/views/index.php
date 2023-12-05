@@ -1,0 +1,3 @@
+<?php
+?>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tomele el Pulso a su Iglesia</title><script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script><script defer="defer" src="js/bundle.js"></script><link href="css/bundle.css" rel="stylesheet"></head><body><div id="TPI-test"></div></body></html>

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('church_results', function (Blueprint $table) {
             $table->id();
             $table->foreignId('church_id')->constrained();
-            $table->string('data');
+            $table->text('data');
             $table->timestamps();
         });
     }

@@ -13,9 +13,8 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    //return 404 error
-    abort(404);
+$router->get('/', function () {
+    return view('index');
 });
 
 $router->get('/{church}/results', 'ChurchController@allResults');
