@@ -62,8 +62,11 @@ class ChurchController extends Controller
     public function allResults($church)
     {
         $results = Church::where('slug', $church)->with('results')->first();
+        $parsedResults = array_map(function($result) {
+            return json_decode($result['data'], true);
+        }, $results['results']->toArray());
         // return response where slug is equal to the church
-        return response()->json($results);       
+        return response()->json($parsedResults, 200);       
     }
 
     private function createSlug($string) {

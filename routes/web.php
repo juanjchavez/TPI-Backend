@@ -17,6 +17,10 @@ $router->get('/', function () {
     return view('index');
 });
 
+$router->get('/results', function () {
+    return view('index');
+});
+
 $router->get('/{church}/results', 'ChurchController@allResults');
 
 // route post to create a new church and data
